@@ -45,13 +45,5 @@ public class VariableExample {
 
 		System.out.println(sum); // 예상 결과 : 8
 		System.out.println(product); // 예상 결과 : 15
-
-		// =====================
-		// 5. String 합성
-		// =====================
-
-		String message = name + "의 올해 나이는 " + age + "살";
-
-		System.out.println(message); // 예상 결과 : GilDong의 올해 나이는 25살
 	}
 }
