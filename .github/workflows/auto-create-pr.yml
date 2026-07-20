@@ -115,7 +115,14 @@ jobs:
     
               if topic:
                 study_topics.append((number, topic))
+          
+          numbers = [number for number, _ in study_topics]
 
+          if len(numbers) != len(set(numbers)):
+            raise ValueError(
+              "중복된 학습 항목 번호 존재. 소제목 번호 재확인 요망."
+            )
+          
           study_topics.sort(key=lambda item: item[0])
 
           body_lines = ["## 학습 내용"]
