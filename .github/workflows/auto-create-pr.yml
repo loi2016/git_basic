@@ -146,6 +146,8 @@ jobs:
 
           if not java_files and not readme_changed:
               body_lines.append("- 변경 내용 확인 필요")
+          
+          body_lines.extent(["", "## 실행 결과"])
 
           Path("pr-body.md").write_text(
               "\n".join(body_lines) + "\n",
