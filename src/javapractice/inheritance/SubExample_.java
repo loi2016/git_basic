@@ -3,7 +3,7 @@ package javapractice.inheritance;
 // =====================
 // 1. 상속 문법
 // =====================
-public class SubExample_1 extends SuperExample_1 { // 클래스 간 상속은 extends, 단일 상속만 가능
+public class SubExample_ extends SuperExample { // 클래스 간 상속은 extends, 단일 상속만 가능
 
 	int exampleField = 200;
 
@@ -22,11 +22,11 @@ public class SubExample_1 extends SuperExample_1 { // 클래스 간 상속은 ex
 	// =====================
 	// 3. 생성자 오버로딩
 	// =====================
-	public SubExample_1() {
+	public SubExample_() {
 		super(); // 생략해도 자동 생성
 		System.out.println("자식 생성자");
 	}
-	public SubExample_1(int a) {
+	public SubExample_(int a) {
 		this.exampleField = a;
 	}
 
@@ -55,12 +55,12 @@ public class SubExample_1 extends SuperExample_1 { // 클래스 간 상속은 ex
 	}
 
 	public static void main(String[] args) {
-		SubExample_1 obj1 = new SubExample_1();
+		SubExample_ obj1 = new SubExample_();
 
 		obj1.superAndChild();
 		// 예상 : 부모 생성자/자식 생성자, 100/200/200, 부모 메서드/자식 메서드/자식 메서드
 
-		SubExample_1 obj2 = new SubExample_1(33);
+		SubExample_ obj2 = new SubExample_(33);
 		obj2.superAndChild();
 		// 예상 : 부모 생성자/자식 생성자, 100/33/33, 부모 메서드/자식 메서드/자식 메서드
 

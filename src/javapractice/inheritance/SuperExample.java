@@ -1,10 +1,10 @@
 package javapractice.inheritance;
 
-public class SuperExample_1 {
+public class SuperExample {
 
 	int exampleField = 100;
 
-	SuperExample_1() {
+	SuperExample() {
 		System.out.println("부모 생성자");
 	}
 
